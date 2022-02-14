@@ -1,0 +1,7 @@
+<h1>Students:</h1>
+<section>
+<% @students.each do |student| %>
+    <%= student.name %>: <%= student.professors.count %>
+    <br>
+<% end %>
+</section>
