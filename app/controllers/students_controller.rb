@@ -1,6 +1,6 @@
 class StudentsController < ApplicationController
 
     def index 
-        @students = Student.all 
+        @students = Student.sort_alphabetically 
     end
 end
