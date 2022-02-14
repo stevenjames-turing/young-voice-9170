@@ -9,8 +9,4 @@ class Student <ApplicationRecord
     def self.sort_alphabetically
         order(name: :asc)
     end
-
-    
-
-
 end
