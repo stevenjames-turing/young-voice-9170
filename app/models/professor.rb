@@ -11,11 +11,7 @@ class Professor <ApplicationRecord
     end
 
     def students_avg_age
-        total_age = 0
-        students.each do |student|
-            total_age += student.age 
-        end
+        total_age = students.sum { |student| student.age }
         total_age / students.count
     end
-
 end

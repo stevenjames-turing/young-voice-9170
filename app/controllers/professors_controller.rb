@@ -1,5 +1,4 @@
 class ProfessorsController < ApplicationController
-
     def index
         @professors = Professor.sort_alphabetically
     end
