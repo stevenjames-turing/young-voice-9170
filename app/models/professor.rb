@@ -6,4 +6,8 @@ class Professor <ApplicationRecord
     has_many :professor_students
     has_many :students, :through => :professor_students 
 
+    def self.sort_alphabetically
+        order(name: :asc)
+    end
+
 end
